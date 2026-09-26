@@ -11,8 +11,7 @@ import CustomerModel from "../../../customer/repository/sequelize/customer.model
 import OrderItemModel from "./order-item.model";
 
 @Table({
-  tableName: "orders",
-  timestamps: false,
+  modelName: "orders"
 })
 export default class OrderModel extends Model {
   @PrimaryKey
